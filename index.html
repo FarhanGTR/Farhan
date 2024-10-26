@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #e9ecef;
+            color: #343a40;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 3px solid #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .portfolio {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .portfolio:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+            margin: 20px 0;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .experience:hover {
+            transform: scale(1.02);
+            background-color: #e2e6ea;
+        }
+
+        .portfolio img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default border */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background: #0056b3;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #343a40;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        h2, h3 {
+            color: #007bff;
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muhammad Farhan</h1>
+        <p>Programer website dan IoT Developer Berbasis Microcontroller & PLC</p>
+        <img src="foto.png" alt="Foto Profil" class="profile-img">
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#experience">Pengalaman Kerja</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Lulusan SMAN 42 Jakarta Timur tahun 2024, memiliki pemahaman mendalam tentang mikrokontroler dan PLC.
+             Tertarik melakukan eksperimen kelistrikan berbasis IoT dan Arduino. Mampu melakukan instalasi dan pengoperasian sistem motor Forward Reverse Start Delta secara otomatis. Terampil dalam bahasa pemrograman C++ dan Python, yang mendukung pengembangan proyek-proyek teknologi inovatif.</p>
+        <a href="Isa Taoi _ Roll20 Characters.pdf" class="button">Unduh CV</a>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio">
+            <h3>Smart Home</h3>
+            <img src="smart-home.jpg" alt="Gambar Proyek 1">
+            <p>Deskripsi singkat proyek ini. Saya mengerjakan Smart Home menggunakan Arduino Uno R3.</p>
+        </div>
+        <div class="portfolio">
+            <h3>Mesin Pakan Otomatis</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/N7aNDkxx_1M?si=hLw09R6h3AR87CEG" 
+                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>Deskripsi singkat proyek ini. Saya mengerjakan Mesin Pakan Otomatis menggunakan Arduino Uno.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Pengalaman Kerja</h2>
+        <div class="experience">
+            <p><strong>PT. JayaWijaya</strong> - Admin Keuangan (3 tahun)</p>
+        </div>
+        <div class="experience">
+            <p><strong>Nama Perusahaan Lain</strong> - [Posisi] ([Durasi])</p>
+        </div>
+        <!-- Tambahkan pengalaman kerja lain di sini -->
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
+        <p>Telepon: 012-3456789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Farhan. Semua Hak Dilindungi.</p>
+        <div class="social-icons">
+            <a href="https://github.com/username" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/username" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Portofolio dimuat dengan sukses!");
+        });
+    </script>
+</body>
+</html>
